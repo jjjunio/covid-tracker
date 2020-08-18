@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Grid,
-  StylesProvider,
-} from "@material-ui/core";
+import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import cx from "classnames";
 
@@ -44,7 +38,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              NUMBER OF ACTIVE COVID-19 CASES
+              Number of active COVID-19 cases.
             </Typography>
           </CardContent>
         </Grid>
@@ -71,7 +65,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              NUMBER OF Recovered COVID-19 CASES
+              Number of recoveries from COVID-19.
             </Typography>
           </CardContent>
         </Grid>
@@ -97,7 +91,9 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2">NUMBER OF COVID-19 Deaths</Typography>
+            <Typography variant="body2">
+              Number of deaths caused by COVID-19.
+            </Typography>
           </CardContent>
         </Grid>
       </Grid>
